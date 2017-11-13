@@ -10,7 +10,7 @@ import java.io.IOException;
 import static org.junit.Assert.*;
 
 public class GsonTest {
-    private String filePath = "D://serialize.txt";
+    private String filePath = "serialize.txt";
     private GsonSerialization expectedClass;
     private GsonSerialization actualClass;
 

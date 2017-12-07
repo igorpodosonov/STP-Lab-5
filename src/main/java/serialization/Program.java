@@ -1,23 +1,29 @@
 package serialization;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.json.JSONObject;
+import serialization.serialize.types.GsonSerialize;
+import serialization.serialize.types.JacksonSerialize;
+import serialization.serialize.types.OrgJsonSerialize;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class Program {
     public static void main(String[] args) throws IOException {
-        String filePath = "D://serialize.txt";
+        String filePath = "D://serialize-gson.txt";
 
-        GsonSerialization deserialize = new GsonSerialization(
-                1,
-                "qwerty",
-                "qwerty",
-                1,
-                "field_string",
-                "qwerty",
-                "field_number",
-                1);
+        GsonSerialize gson = new GsonSerialize();
+        gson.runSerialization(filePath);
 
-        deserialize.deserialization(filePath);
+        OrgJsonSerialize orgJson = new OrgJsonSerialize();
+        orgJson.runSerialization(filePath);
 
-        GsonSerialization serialize = new GsonSerialization(filePath);
+        JacksonSerialize jackson = new JacksonSerialize();
+        jackson. runSerialization(filePath);
     }
 }

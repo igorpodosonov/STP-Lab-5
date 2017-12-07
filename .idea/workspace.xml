@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf6e441-f33f-4501-948a-b592cbaea4d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/serialization/serialize/types/GsonSerialize.class" afterPath="$PROJECT_DIR$/out/production/classes/serialization/serialize/types/GsonSerialize.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/GsonTest.class" afterPath="$PROJECT_DIR$/out/test/classes/GsonTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/serialization/serialize/types/GsonSerialize.java" afterPath="$PROJECT_DIR$/src/main/java/serialization/serialize/types/GsonSerialize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/GsonTest.java" afterPath="$PROJECT_DIR$/src/test/java/GsonTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -62,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GsonTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GsonTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GsonTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
@@ -70,6 +66,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -457,7 +463,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/serialization/RandomClass.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/serialization/JacksonSerialization.java" />
         <option value="$PROJECT_DIR$/src/main/java/serialization/MySerializeInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/serialization/GsonSerizlization.java" />
@@ -475,6 +480,7 @@
         <option value="$PROJECT_DIR$/src/main/java/serialization/Program.java" />
         <option value="$PROJECT_DIR$/src/main/java/serialization/serialize/types/GsonSerialize.java" />
         <option value="$PROJECT_DIR$/src/test/java/GsonTest.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -812,9 +818,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GsonTest - 2017.11.13 at 03h 51m 30s.xml">
-      <configuration name="GsonTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GsonTest - 2017.11.13 at 03h 51m 35s.xml">
       <configuration name="GsonTest" configurationId="JUnit" />
     </history-entry>
@@ -840,6 +843,9 @@
       <configuration name="GsonTest (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GsonTest_(1) - 2017.12.07 at 19h 14m 15s.xml">
+      <configuration name="GsonTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GsonTest_(1) - 2017.12.07 at 19h 22m 54s.xml">
       <configuration name="GsonTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -934,7 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/settings.gradle" />
     <entry file="file://$PROJECT_DIR$/src/main/java/serialization/MySerializeInterface.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1055,6 +1060,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

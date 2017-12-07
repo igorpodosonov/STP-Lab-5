@@ -1,1 +1,15 @@
-{"fieldNumber":1,"fieldString":"qwerty","fieldObject":{"fieldString":"qwerty","fieldNumber":1},"fieldMap":{"field_number":1,"field_string":"qwerty"}}
+{
+  "movie_name" : "A Clockwork Orange",
+  "year" : 1971,
+  "director_info" : {
+    "name" : "Stanley Kubrick",
+    "birth_place" : "New York City",
+    "birth_year" : 1928
+  },
+  "actor_role" : {
+    "Malcolm McDowell" : "Alex DeLarge",
+    "Patrick Magee" : "Mr. Frank Alexander",
+    "Michael Bates" : "Chief Guard Barnes",
+    "Warren Clarke" : "Dim"
+  }
+}

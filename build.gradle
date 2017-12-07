@@ -4,37 +4,15 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile group: 'org.json', name: 'json', version: '20140107'
     compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
 }
 
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile 'com.google.code.gson:gson:2.2.4'
-}
-
-jacocoTestReport {
-    reports {
-        xml.enabled true
-        html.enabled false
-    }
-}
-
-check.dependsOn jacocoTestReport
 
 task codeCoverageReport(type: JacocoReport) {
     def coverageSourceDirs = [
@@ -50,7 +28,7 @@ task codeCoverageReport(type: JacocoReport) {
 
     reports {
         xml.enabled true
-        xml.destination "/reports/jacoco/report.xml"
+        xml.destination "${buildDir}/reports/jacoco/report.xml"
         html.enabled false
         csv.enabled false
     }
@@ -58,4 +36,17 @@ task codeCoverageReport(type: JacocoReport) {
 
 codeCoverageReport.dependsOn {
     subprojects*.task(test)
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
+check.dependsOn jacocoTestReport
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
 }

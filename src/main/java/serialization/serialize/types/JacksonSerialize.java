@@ -1,6 +1,5 @@
 package serialization.serialize.types;
 
-import com.sun.xml.internal.ws.developer.SerializationFeature;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 import serialization.ClassToSerialize;

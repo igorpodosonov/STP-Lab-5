@@ -3,8 +3,11 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'jacoco'
-// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
-compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.1.0'
+
+dependencies {
+    compile group: 'org.json', name: 'json', version: '20140107'
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
+}
 
 sourceCompatibility = 1.8
 

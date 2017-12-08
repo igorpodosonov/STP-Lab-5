@@ -1,29 +1,28 @@
 import org.junit.Before;
 import org.junit.Test;
-import serialization.*;
-import serialization.serialize.types.GsonSerialize;
+import serialization.ClassToSerialize;
+import serialization.serialize.types.JacksonSerialize;
+import serialization.serialize.types.OrgJsonSerialize;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-public class GsonTest {
-    private String filePath = "serialize.txt";
+public class OrgJsonTest {
+    private String filePath = "D://serialize-gson.txt";
     private ClassToSerialize expectedClass;
     private ClassToSerialize actual;
 
     @Before
-    public void setUp(){
-        GsonSerialize gson = new GsonSerialize();
-        expectedClass = gson.serialize(filePath);
+    public void setUp() throws IOException {
+        OrgJsonSerialize orgJson = new OrgJsonSerialize();
+        expectedClass = orgJson.serialization(filePath);
     }
 
     @Test
     public void testSerialize() throws Exception {
-        GsonSerialize gson = new GsonSerialize();
-        actual = gson.serialize(filePath);
+        OrgJsonSerialize orgJson = new OrgJsonSerialize();
+        actual = orgJson.serialization(filePath);
 
         assertEquals(expectedClass.name, actual.name);
         assertEquals(expectedClass.year, actual.year);
@@ -37,10 +36,10 @@ public class GsonTest {
 
     @Test
     public void testDeserialize() throws Exception {
-        GsonSerialize gson = new GsonSerialize();
-        gson.deserialize(expectedClass);
+        OrgJsonSerialize orgJson = new OrgJsonSerialize();
+        orgJson.deserialization(expectedClass);
 
-        actual = gson.serialize(filePath);
+        actual = orgJson.serialization(filePath);
 
         assertEquals(expectedClass.name, actual.name);
         assertEquals(expectedClass.year, actual.year);

@@ -14,9 +14,9 @@ public class OrgJsonSerialize extends SuperSerialization {
     public void runSerialization(String filePath) throws IOException {
         measureStart();
 
-        String json = getTextFromFile(filePath);
 
-        ClassToSerialize serializedClass = serialization(json);
+
+        ClassToSerialize serializedClass = serialization(filePath);
 
         String deserialize = deserialization(serializedClass);
         overwriteFile(filePath, deserialize);
@@ -25,7 +25,7 @@ public class OrgJsonSerialize extends SuperSerialization {
         displayStats("Org.Json Serialize/Deserialize");
     }
 
-    private String deserialization(ClassToSerialize serializedClass) {
+    public String deserialization(ClassToSerialize serializedClass) {
         JSONObject jsnDeserialized = new JSONObject();
         jsnDeserialized.put("movie_name", serializedClass.name);
         jsnDeserialized.put("year", serializedClass.year);
@@ -41,7 +41,8 @@ public class OrgJsonSerialize extends SuperSerialization {
         return jsnDeserialized.toString(4);
     }
 
-    private ClassToSerialize serialization(String json) {
+    public ClassToSerialize serialization(String filePath) {
+        String json = getTextFromFile(filePath);
         JSONObject jsnObj = new JSONObject(json);
         ClassToSerialize serializedClass = new ClassToSerialize();
 

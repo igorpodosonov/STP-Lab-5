@@ -28,23 +28,23 @@
 ```
 ### Result of performance:
 ```
-    ====================================
-    Gson Serialize/Deserialize 
-     run time: 293 milliseconds, 
-     memory usage: 4.625328 megabytes
-    ====================================
+====================================
+Gson Serialize/Deserialize 
+ run time: 328 milliseconds, 
+ memory usage: 5.066272 megabytes
+====================================
 ```
 ```
-    ====================================
-    Org.Json Serialize/Deserialize 
-     run time: 16 milliseconds, 
-     memory usage: 0.0 megabytes
-    ====================================
+====================================
+Org.Json Serialize/Deserialize 
+ run time: 15 milliseconds, 
+ memory usage: 0.503312 megabytes
+====================================
 ```
 ```
-    ====================================
-    Jackson Serialize/Deserialize 
-     run time: 582 milliseconds, 
-     memory usage: 12.889152 megabytes
-    ====================================
+====================================
+Jackson Serialize/Deserialize 
+ run time: 672 milliseconds, 
+ memory usage: 14.927888 megabytes
+====================================
 ```
